@@ -1400,6 +1400,9 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/banditcamp)
+"ma" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "mc" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/structure/fluff/walldeco/stone{
@@ -1743,6 +1746,10 @@
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/banditcamp)
+"qI" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "qO" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/inhumen)
@@ -2526,6 +2533,9 @@
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
+"Bf" = (
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/indoors/cave)
 "Bi" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/inhumen)
@@ -2606,8 +2616,8 @@
 	aportalid = "banditin2";
 	aportalgoesto = "banditexit2"
 	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "Cv" = (
 /obj/structure/mineral_door/wood/donjon/stone,
 /turf/open/floor/rogue/concrete,
@@ -3462,6 +3472,9 @@
 /obj/item/flashlight/flare/torch/metal,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/vampire_manor)
+"MN" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/cave)
 "MQ" = (
 /obj/effect/decal/mossy{
 	dir = 4
@@ -10619,7 +10632,7 @@ aH
 RH
 RH
 RH
-aH
+AU
 Rt
 Rt
 Rt
@@ -10745,12 +10758,12 @@ aH
 aH
 aH
 vU
-aH
-RH
-RH
-RH
-IJ
-Rt
+AU
+Bf
+MN
+MN
+Bf
+AU
 Rt
 Rt
 Rt
@@ -10873,19 +10886,19 @@ aH
 Rt
 aH
 aH
-aH
-aH
-aH
-aH
-RH
-RH
-aH
+Rt
+AU
+AU
+Bf
+ma
+ma
+ma
+AU
+AU
+AU
 Rt
 Rt
-Rt
-Rt
-Rt
-vU
+aH
 Rt
 Rt
 Rt
@@ -11002,17 +11015,17 @@ Rt
 Rt
 Rt
 vU
-aH
-aH
-aH
-aH
-XW
-RH
-RH
-XW
-aH
 Rt
 Rt
+AU
+AU
+qI
+ma
+ma
+qI
+AU
+AU
+AU
 Rt
 Rt
 aH
@@ -11133,20 +11146,20 @@ Rt
 Rt
 Rt
 tY
+AU
+AU
+AU
+ma
+ma
+ma
+ma
+AU
+AU
+AU
+AU
+AU
 aH
 aH
-vU
-RH
-RH
-RH
-RH
-aH
-Rt
-Rt
-Rt
-Rt
-aH
-vU
 aH
 aH
 bX
@@ -11260,10 +11273,10 @@ Rt
 aH
 Rt
 Rt
-Rt
-Rt
-Rt
-vU
+AU
+AU
+AU
+AU
 kB
 kB
 Ct
@@ -11273,7 +11286,7 @@ Ct
 kB
 kB
 kB
-Dk
+kB
 Dk
 Dk
 kB
@@ -11396,10 +11409,10 @@ kB
 kB
 kB
 kB
-kB
-kB
-kB
-kB
+Bf
+Bf
+Bf
+Bf
 kB
 kB
 kB
