@@ -68,6 +68,10 @@
 /datum/status_effect/incapacitating/unconscious
 	id = "unconscious"
 	needs_update_stat = TRUE
+/datum/status_effect/incapacitating/unconscious/on_creation(mob/living/new_owner, updating_canmove)
+	..()
+	owner.emote("losecon", intentional = FALSE)
+
 
 /datum/status_effect/incapacitating/unconscious/tick()
 	if(owner.getStaminaLoss())

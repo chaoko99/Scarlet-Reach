@@ -1,6 +1,6 @@
 /datum/wound/artery
-	name = "severed artery"
-	check_name = span_artery("<B>ARTERY</B>")
+	name = "Hemorrhage"
+	check_name = span_artery("<B>HEMORRHAGE</B>")
 	severity = WOUND_SEVERITY_CRITICAL
 	crit_message = "Blood sprays from %VICTIM's %BODYPART!"
 	sound_effect = 'sound/combat/crit.ogg'

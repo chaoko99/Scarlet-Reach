@@ -8,6 +8,12 @@
 	key_third_person = "blushes"
 	message = "blushes."
 
+/datum/emote/living/losecon
+	key = "losecon"
+	key_third_person = "loses consciousnesss."
+	message = "loses consciousnesss."
+	stat_allowed = list(CONSCIOUS, UNCONSCIOUS)
+
 /datum/emote/living/pray
 	key = "pray"
 	key_third_person = "prays"
