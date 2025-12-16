@@ -159,6 +159,7 @@
 	desc = "A small lamptern dangles from a wooden post. The metal frame around the inner flame casts shadows on its surroundings."
 	icon = 'icons/roguetown/misc/tallstructure.dmi'
 	icon_state = "streetlantern1"
+	torch_off_state = "streetlantern0"
 	base_state = "streetlantern"
 	brightness = 5
 	density = FALSE

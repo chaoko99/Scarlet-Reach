@@ -69,8 +69,8 @@
 	id = "unconscious"
 	needs_update_stat = TRUE
 /datum/status_effect/incapacitating/unconscious/on_creation(mob/living/new_owner, updating_canmove)
-	..()
 	owner.emote("losecon", intentional = FALSE)
+	. = ..()
 
 
 /datum/status_effect/incapacitating/unconscious/tick()
@@ -99,6 +99,7 @@
 			carbon_owner = owner
 		if(ishuman(owner))
 			human_owner = owner
+	owner.emote("losecon", intentional = FALSE)
 
 /datum/status_effect/incapacitating/sleeping/on_remove()
 	if(human_owner && human_owner.client)
