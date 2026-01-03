@@ -35,9 +35,18 @@
 	var/list/obj/item/rogueweapon/invalid_blades
 	var/obj/item/rogueweapon/sheathed
 	var/sheathe_time = 0.1 SECONDS
+	var/obj/item/rogueweapon/sheathspawn
 	sheathe_sound = 'sound/foley/equip/scabbard_holster.ogg'
 
 
+/obj/item/rogueweapon/scabbard/Initialize(loc, spawnwith)
+	. = ..()
+	var/thing_to_make = sheathspawn
+	if(spawnwith)
+		thing_to_make = spawnwith
+	var/obj/item/rogueweapon/mything = new thing_to_make
+	if(weapon_check(null, mything, TRUE))
+		eat_sword(null, mything)
 /obj/item/rogueweapon/scabbard/attack_obj(obj/O, mob/living/user)
 	return FALSE
 
@@ -51,20 +60,20 @@
 	..()
 
 
-/obj/item/rogueweapon/scabbard/proc/weapon_check(mob/living/user, obj/A)
-	if(sheathed)
-		to_chat(user, span_warning("The sheath is occupied!"))
+/obj/item/rogueweapon/scabbard/proc/weapon_check(mob/living/user, obj/A, silent)
+	if(sheathe) 
+		if(user && !silent) to_chat(user, span_warning("The sheath is occupied!"))
 		return FALSE
 	if(valid_blade && !istype(A, valid_blade))
-		to_chat(user, span_warning("[A] won't fit in there.."))
+		if(user && !silent) to_chat(user, span_warning("[A] won't fit in there.."))
 		return FALSE
 	if(valid_blades)
 		if(!(A.type in valid_blades))
-			to_chat(user, span_warning("[A] won't fit in there."))
+			if(user && !silent) to_chat(user, span_warning("[A] won't fit in there."))
 			return FALSE
 	if(invalid_blades)
 		if(A.type in invalid_blades)
-			to_chat(user, span_warning("[A] won't fit in there.."))
+			if(user && !silent) to_chat(user, span_warning("[A] won't fit in there.."))
 			return FALSE
 	return TRUE
 
@@ -73,10 +82,11 @@
 	if(!weapon_check(user, A))
 		return FALSE
 	if(obj_broken)
-		user.visible_message(
-			span_warning("[user] begins to force [A] into [src]!"),
-			span_warningbig("I begin to force [A] into [src].")
-		)
+		if(user && !silent)
+			user.visible_message(
+				span_warning("[user] begins to force [A] into [src]!"),
+				span_warningbig("I begin to force [A] into [src].")
+			)
 		if(!move_after(user, 2 SECONDS, target = user))
 			return FALSE
 		return FALSE
@@ -87,12 +97,14 @@
 	sheathed = A
 	update_icon(user)
 
-	user.visible_message(
-		span_notice("[user] sheathes [A] into [src]."),
-		span_notice("I sheathe [A] into [src].")
-	)
+	if(user && !silent)
+		user.visible_message(
+			span_notice("[user] sheathes [A] into [src]."),
+			span_notice("I sheathe [A] into [src].")
+		)
 
-	playsound(src, sheathe_sound, 100, TRUE)
+	if(!silent)
+		playsound(src, sheathe_sound, 100, TRUE)
 	return TRUE
 
 
