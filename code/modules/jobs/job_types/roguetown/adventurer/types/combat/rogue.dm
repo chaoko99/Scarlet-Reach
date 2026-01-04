@@ -51,9 +51,8 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backpack_contents = list(
 		/obj/item/lockpick = 1, 
-		/obj/item/rogueweapon/huntingknife = 1, 
+		/obj/item/rogueweapon/scabbard/sheath/huntingknife = 1, 
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 
 	var/weapons = list("Sabre","Whip")
@@ -121,10 +120,9 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch = 1,
-		/obj/item/rogueweapon/huntingknife/idagger/steel = 1,
 		/obj/item/lockpickring/mundane = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath/steel = 1
 		)
 
 /datum/advclass/rogue/bard
@@ -170,14 +168,13 @@
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
+	beltr = /obj/item/rogueweapon/scabbard/sheath/steel
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 	backl = /obj/item/storage/backpack/rogue/satchel
 	cloak = /obj/item/clothing/cloak/half/red
 	backpack_contents = list(
 		/obj/item/lockpick = 1,
-		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/recipe_book/survival = 1
 		)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery/bard)
@@ -251,7 +248,6 @@
 	backpack_contents = list(
 		/obj/item/bomb = 1,
 		/obj/item/lockpick = 1,
-		/obj/item/rogueweapon/huntingknife/idagger/steel/parrying = 1,
+		/obj/item/rogueweapon/scabbard/sheath/parrying = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
 		)

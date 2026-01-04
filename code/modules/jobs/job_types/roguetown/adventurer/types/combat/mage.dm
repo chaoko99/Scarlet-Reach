@@ -40,7 +40,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/reagent_containers/glass/bottle/rogue/manapot
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	beltl = /obj/item/rogueweapon/huntingknife
+	beltl = /obj/item/rogueweapon/scabbard/sheath/huntingknife
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/woodstaff
 	backpack_contents = list(
@@ -48,7 +48,6 @@
 		/obj/item/spellbook_unfinished/pre_arcyne = 1,
 		/obj/item/roguegem/amethyst = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/recipe_book/magic = 1,
 		/obj/item/ritechalk = 1,
 		)
@@ -265,9 +264,8 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel //sovlful -1 STR mace gaming. pray to xylix for thine knockout crit, sire
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch = 1,
-		/obj/item/rogueweapon/huntingknife/idagger = 1, //take conjure weapon if you want a fancy dagger
+		/obj/item/rogueweapon/scabbard/sheath/iron = 1, //take conjure weapon if you want a fancy dagger
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 
 	if(H.mind)

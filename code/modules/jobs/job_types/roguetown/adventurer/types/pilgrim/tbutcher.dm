@@ -35,7 +35,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 	backl = /obj/item/storage/backpack/rogue/satchel
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/rogueweapon/huntingknife/cleaver // old tbutcher had no knife. as a butcher.
+	beltl = /obj/item/rogueweapon/scabbard/sheath/cleaver // old tbutcher had no knife. as a butcher.
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backpack_contents = list(
@@ -44,7 +44,6 @@
 						/obj/item/flashlight/flare/torch = 1,
 						/obj/item/recipe_book/survival = 1,
 						/obj/item/reagent_containers/food/snacks/fat = 2, // make sausages :)
-						/obj/item/rogueweapon/scabbard/sheath = 1,
 						)
 	if(should_wear_femme_clothes(H))
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random

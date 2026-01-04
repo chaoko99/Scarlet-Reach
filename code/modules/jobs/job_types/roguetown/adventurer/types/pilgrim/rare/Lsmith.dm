@@ -42,7 +42,6 @@
 	beltr = /obj/item/rogueweapon/hammer/iron
 	beltl = /obj/item/rogueweapon/tongs
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
-	mouth = /obj/item/rogueweapon/huntingknife
 
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
@@ -56,7 +55,7 @@
 						/obj/item/rogueore/iron=2,
 						/obj/item/rogueore/silver=1,
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/rogueweapon/scabbard/sheath = 1,
+						/obj/item/rogueweapon/scabbard/sheath/huntingknife = 1
 						)
 
 	if(H.pronouns == HE_HIM)

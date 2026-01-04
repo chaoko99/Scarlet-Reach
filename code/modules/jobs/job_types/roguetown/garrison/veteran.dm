@@ -168,9 +168,8 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
 	)
 	if(H.age == AGE_MIDDLEAGED)
 		ADD_TRAIT(H,TRAIT_GOODTRAINER,TRAIT_GENERIC) // SR edit
@@ -237,8 +236,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial= 1,
 		/obj/item/storage/keyring/guardcastle,
 	)
 
@@ -314,8 +312,7 @@
 			belt = /obj/item/storage/belt/rogue/leather/black
 			cloak = /obj/item/clothing/cloak/half/vet
 			backpack_contents = list(
-				/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-				/obj/item/rogueweapon/scabbard/sheath = 1,
+				/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 			)
 			H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
@@ -527,9 +524,8 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 		/obj/item/storage/keyring/guardcastle = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
 	)
 	if(H.age == AGE_MIDDLEAGED)
 		ADD_TRAIT(H,TRAIT_GOODTRAINER,TRAIT_GENERIC)

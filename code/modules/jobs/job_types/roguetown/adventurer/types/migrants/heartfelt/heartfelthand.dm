@@ -56,8 +56,7 @@
 	//l_hand = banner-pike for when I add it
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/rich = 1,)
 	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
@@ -120,8 +119,7 @@
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/rich = 1,)
 	mask = /obj/item/clothing/mask/rogue/spectacles/golden
@@ -186,8 +184,7 @@
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	mask = /obj/item/clothing/mask/rogue/spectacles/golden
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/rich = 1,
 		/obj/item/lockpickring/mundane = 1, 

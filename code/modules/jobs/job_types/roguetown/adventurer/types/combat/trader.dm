@@ -42,7 +42,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/rogueweapon/huntingknife
+	beltr = /obj/item/rogueweapon/scabbard/sheath/hunt_or_copper
 	backpack_contents = list(
 		/obj/item/clothing/ring/silver = 2,
 		/obj/item/clothing/ring/gold = 1,
@@ -51,7 +51,6 @@
 		/obj/item/roguegem/yellow = 1,
 		/obj/item/roguegem/green = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 
 /datum/advclass/trader/doomsayer
@@ -99,9 +98,8 @@
 		/obj/item/clothing/neck/roguetown/psicross/silver = 3,
 		/obj/item/clothing/neck/roguetown/psicross = 2,
 		/obj/item/clothing/neck/roguetown/psicross/wood = 1,
-		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath/hunt_or_copper = 1
 		)
 
 /datum/advclass/trader/scholar
@@ -141,7 +139,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/rogueweapon/huntingknife/idagger
+	beltr = /obj/item/rogueweapon/scabbard/sheath/iron
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	backpack_contents = list(
@@ -151,8 +149,7 @@
 		/obj/item/reagent_containers/glass/bottle/rogue/strongmanapot = 1,
 		/obj/item/natural/feather = 1,
 		/obj/item/roguegem/amethyst = 1,
-		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/recipe_book/survival = 1
 		)
 
 /datum/advclass/trader/harlequin
@@ -188,7 +185,7 @@
 	pants = /obj/item/clothing/under/roguetown/tights
 	armor = /obj/item/clothing/suit/roguetown/shirt/jester
 	belt = /obj/item/storage/belt/rogue/leather
-	beltr = /obj/item/rogueweapon/huntingknife/idagger
+	beltr = /obj/item/rogueweapon/scabbard/sheath/iron
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backl = /obj/item/storage/backpack/rogue/satchel
 	head = /obj/item/clothing/head/roguetown/jester
@@ -199,7 +196,6 @@
 		/obj/item/storage/pill_bottle/dice = 1,
 		/obj/item/toy/cards/deck = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 
 	var/weapons = list("Harp","Lute","Accordion","Guitar","Hurdy-Gurdy","Viola","Vocal Talisman", "Trumpet")
@@ -268,9 +264,8 @@
 		/obj/item/reagent_containers/powder/spice = 2,
 		/obj/item/reagent_containers/powder/ozium = 1,
 		/obj/item/reagent_containers/powder/moondust = 2,
-		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath/hunt_or_copper = 1
 		)
 
 /datum/advclass/trader/brewer
@@ -320,8 +315,7 @@
 		/obj/item/reagent_containers/glass/bottle/rogue/beer/blackgoat = 1, 
 		/obj/item/reagent_containers/glass/bottle/rogue/elfred = 1, 
 		/obj/item/reagent_containers/glass/bottle/rogue/elfblue = 1, 
-		/obj/item/rogueweapon/huntingknife = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/hunt_or_copper = 1,
 		/obj/item/ingot/copper = 2,
 		/obj/item/roguegear = 1, 
 		/obj/item/recipe_book/survival = 1)
@@ -381,8 +375,7 @@
 		/obj/item/reagent_containers/food/snacks/butter = 1,
 		/obj/item/kitchen/rollingpin = 1,
 		/obj/item/flint = 1,
-		/obj/item/rogueweapon/huntingknife/chefknife = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/chef = 1,
 		/obj/item/recipe_book/survival = 1,
 		)
 		// no ration wrappers by design

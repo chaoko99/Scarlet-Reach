@@ -50,10 +50,9 @@
 	backpack_contents = list(
 						/obj/item/flint = 1,
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/rogueweapon/huntingknife = 1,
 						/obj/item/recipe_book/builder = 1,
 						/obj/item/recipe_book/survival = 1,
-						/obj/item/rogueweapon/scabbard/sheath = 1,
+						/obj/item/rogueweapon/scabbard/sheath/hunt_or_copper
 						)
 	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen

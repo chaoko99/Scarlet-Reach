@@ -79,13 +79,12 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/rogueweapon/huntingknife
+	beltl = /obj/item/rogueweapon/scabbard/sheath/huntingknife
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/ritechalk = 1,
 		/obj/item/flashlight/flare/torch/lantern/prelit = 1,
-		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rope/chain = 1
 		)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -283,12 +282,11 @@
 			l_hand = /obj/item/rogueweapon/sword/rapier
 		if("Dagger")
 			H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
-			beltl = /obj/item/rogueweapon/scabbard/sheath
-			l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/special
+			beltl = /obj/item/rogueweapon/scabbard/sheath/steelspecial
 		if("Whip & Hunting Knife")
 			H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_EXPERT, TRUE) // no adjustment for knives skill cos thats how the others are done
 			l_hand = /obj/item/rogueweapon/whip
-			backpack_contents += /obj/item/rogueweapon/huntingknife
+			backpack_contents += /obj/item/rogueweapon/scabbard/sheath/huntingknife
 		if("Bow")
 			H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			beltl = /obj/item/quiver/arrows

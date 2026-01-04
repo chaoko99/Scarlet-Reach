@@ -52,9 +52,8 @@
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	backpack_contents = list(
 		/obj/item/bait = 1,
-		/obj/item/rogueweapon/huntingknife = 1,
-		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath/huntingknife = 1,
+		/obj/item/recipe_book/survival = 1
 		)
 
 	var/weapons = list("Recurve Bow","Crossbow")
@@ -112,13 +111,12 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	cloak = /obj/item/clothing/cloak/raincloak/mortus
 	backl = /obj/item/storage/backpack/rogue/satchel
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
+	beltl = /obj/item/rogueweapon/scabbard/sheath/steel
 	beltr = /obj/item/quiver/bolts
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 
 	H.cmode_music = 'sound/music/combat_condottiero.ogg'
@@ -167,9 +165,8 @@
 	beltl = /obj/item/rogueweapon/mace/cudgel
 	backpack_contents = list(
 		/obj/item/bomb = 4,
-		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath/huntingknife = 1
 		)
 
 	H.set_blindness(0)
@@ -219,9 +216,8 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut // Technical main weapon?
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/flashlight/flare/torch/lantern = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath/huntingknife = 1
 		)
 
 	var/weapons = list("Recurve Bow","Billhook","Sling","Crossbow")

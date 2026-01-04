@@ -63,9 +63,8 @@
 	backl = /obj/item/rogueweapon/shield/tower/metal
 	id = /obj/item/scomstone/mattcoin
 	backpack_contents = list(
-					/obj/item/rogueweapon/huntingknife/idagger = 1,
 					/obj/item/flashlight/flare/torch = 1,
-					/obj/item/rogueweapon/scabbard/sheath = 1
+					/obj/item/rogueweapon/scabbard/sheath/iron = 1
 					)
 
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()	

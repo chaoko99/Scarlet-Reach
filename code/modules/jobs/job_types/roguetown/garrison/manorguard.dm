@@ -131,10 +131,9 @@
 			r_hand = /obj/item/rogueweapon/spear
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/storage/keyring/guardcastle,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/keyring/guardcastle = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1 
 	)
 	H.verbs |= /mob/proc/haltyell
 
@@ -218,10 +217,9 @@
 		if("Trusty Cudgel")
 			H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/storage/keyring/guardcastle,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/keyring/guardcastle =1 ,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1
 	)
 	H.verbs |= /mob/proc/haltyell
 
@@ -295,10 +293,9 @@
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 	
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/storage/keyring/guardcastle,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/keyring/guardcastle= 1,
 		)
 	H.verbs |= /mob/proc/haltyell
 

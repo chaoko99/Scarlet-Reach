@@ -190,8 +190,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger = 1,
+		/obj/item/rogueweapon/scabbard/sheath/iron = 1,
 		/obj/item/rogueweapon/hammer/copper = 1,
 		/obj/item/storage/belt/rogue/pouch = 1,
-		/obj/item/rogueweapon/scabbard/sheath,
 	)

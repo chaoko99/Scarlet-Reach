@@ -72,9 +72,8 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/steelspecial = 1,
 	)
 	// This code is broken but also not, I assume because it has 1 Advanced Class at the moment DO NOT UNCOMMENT. 
 	// IT WORKS :TM: still gives them a helm and grandmace, just not the choice

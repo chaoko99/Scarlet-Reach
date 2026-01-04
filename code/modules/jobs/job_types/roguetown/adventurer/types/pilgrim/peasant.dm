@@ -39,8 +39,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	armor = /obj/item/clothing/suit/roguetown/armor/workervest
-	mouth = /obj/item/rogueweapon/huntingknife
-	beltr = /obj/item/flint
+	beltr = /obj/item/rogueweapon/scabbard/sheath/hunt_or_copper
 	if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
@@ -51,7 +50,7 @@
 						/obj/item/ash=1,
 						/obj/item/flashlight/flare/torch = 1,
 						/obj/item/recipe_book/survival = 1,
-						/obj/item/rogueweapon/scabbard/sheath = 1,
+						/obj/item/flint = 1,
 						)
 	beltl = /obj/item/rogueweapon/sickle
 	backr = /obj/item/rogueweapon/hoe

@@ -51,7 +51,7 @@
 		/obj/item/flashlight/flare/torch/lantern/prelit = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/rogueweapon/scabbard/sheath/huntingknife
 	)
 
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()

@@ -45,8 +45,11 @@
 	if(spawnwith)
 		thing_to_make = spawnwith
 	var/obj/item/rogueweapon/mything = new thing_to_make
-	if(weapon_check(null, mything, TRUE))
-		eat_sword(null, mything)
+	if(weapon_check(null, mything, TRUE)) //Silently spawn and then fill the sword for the sheath.
+		eat_sword(null, mything, TRUE)
+	else
+		testing("##YOU DEFINED THE WRONG SWORD FOR THIS SCABBARD PUNKASS")
+		qdel(mything)
 /obj/item/rogueweapon/scabbard/attack_obj(obj/O, mob/living/user)
 	return FALSE
 
@@ -61,7 +64,7 @@
 
 
 /obj/item/rogueweapon/scabbard/proc/weapon_check(mob/living/user, obj/A, silent)
-	if(sheathe) 
+	if(sheathed) 
 		if(user && !silent) to_chat(user, span_warning("The sheath is occupied!"))
 		return FALSE
 	if(valid_blade && !istype(A, valid_blade))
@@ -78,7 +81,7 @@
 	return TRUE
 
 
-/obj/item/rogueweapon/scabbard/proc/eat_sword(mob/living/user, obj/A)
+/obj/item/rogueweapon/scabbard/proc/eat_sword(mob/living/user, obj/A, silent)
 	if(!weapon_check(user, A))
 		return FALSE
 	if(obj_broken)
@@ -280,6 +283,33 @@
 	max_integrity = 500
 	sellprice = 2
 
+/obj/item/rogueweapon/scabbard/sheath/huntingknife
+	sheathspawn = /obj/item/rogueweapon/huntingknife
+
+/obj/item/rogueweapon/scabbard/sheath/iron
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger
+/obj/item/rogueweapon/scabbard/sheath/steel
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/steel
+/obj/item/rogueweapon/scabbard/sheath/steelspecial
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/steel/special
+/obj/item/rogueweapon/scabbard/sheath/silver
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/silver
+/obj/item/rogueweapon/scabbard/sheath/psydagger
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/silver/psydagger
+/obj/item/rogueweapon/scabbard/sheath/copper
+	sheathspawn = /obj/item/rogueweapon/huntingknife/copper
+/obj/item/rogueweapon/scabbard/sheath/cleaver
+	sheathspawn = /obj/item/rogueweapon/huntingknife/cleaver
+/obj/item/rogueweapon/scabbard/sheath/chef
+	sheathspawn = /obj/item/rogueweapon/huntingknife/chefknife
+/obj/item/rogueweapon/scabbard/sheath/elvish
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+/obj/item/rogueweapon/scabbard/sheath/parrying
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
+/obj/item/rogueweapon/scabbard/sheath/hunt_or_copper/Initialize()
+	sheathspawn = pick(/obj/item/rogueweapon/huntingknife, /obj/item/rogueweapon/huntingknife/copper)
+	. = ..()
+
 /obj/item/rogueweapon/scabbard/sheath/getonmobprop(tag)
 	..()
 
@@ -400,7 +430,8 @@
 	wdefense = 8
 
 	max_integrity = 0
-
+/obj/item/rogueweapon/scabbard/sword/kazengun/filled
+	sheathspawn = /obj/item/rogueweapon/sword/sabre/mulyeog
 
 /obj/item/rogueweapon/scabbard/sword/kazengun/steel
 	name = "lenticular scabbard"
@@ -409,6 +440,8 @@
 	item_state = "kazscab_steel"
 	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 
+/obj/item/rogueweapon/scabbard/sword/kazengun/steel/filled
+	sheathspawn = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 
 /obj/item/rogueweapon/scabbard/sword/kazengun/gold
 	name = "gold-stained scabbard"
@@ -418,6 +451,9 @@
 	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
 	sellprice = 10
 
+/obj/item/rogueweapon/scabbard/sword/kazengun/gold/filled
+	sheathspawn = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
+
 /obj/item/rogueweapon/scabbard/sword/kazengun/kodachi
 	name = "plain lacquer scabbard"
 	desc = "A plain lacquered scabbard with simple steel hardware. A plain dark cloth serves to hang it from a belt."
@@ -425,6 +461,8 @@
 	item_state = "kazscabyuruku"
 	valid_blade = /obj/item/rogueweapon/sword/short/kazengun
 	wdefense = 4
+/obj/item/rogueweapon/scabbard/sword/kazengun/kodachi/filled
+	sheathspawn = /obj/item/rogueweapon/sword/short/kazengun
 
 /obj/item/rogueweapon/scabbard/sheath/kazengun
 	name = "plain lacquer sheath"
@@ -438,3 +476,5 @@
 	wdefense = 3
 
 	max_integrity = 0
+/obj/item/rogueweapon/scabbard/sheath/kazengun/filled
+	sheathspawn = /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun
